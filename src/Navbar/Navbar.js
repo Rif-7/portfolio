@@ -58,7 +58,7 @@ export default function Navbar() {
         />
         <MenuList>
           <MenuItem>About</MenuItem>
-          <MenuItem>Profile</MenuItem>
+          <MenuItem>Projects</MenuItem>
           <MenuItem>Contact</MenuItem>
         </MenuList>
       </Menu>
