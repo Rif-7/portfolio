@@ -9,7 +9,7 @@ const languages = [
 ];
 
 const otherSkills = [
-  { name: "React", url: "skills/react.png" },
+  { name: "React JS", url: "skills/react.png" },
   { name: "Express JS", url: "skills/express.png" },
   { name: "Node JS", url: "skills/nodejs.png" },
   { name: "Redux", url: "skills/redux.png" },
@@ -43,14 +43,14 @@ function SkillSet({ skills, title }) {
   return (
     <VStack
       rounded={"md"}
-      bg={{ base: "white", lg: "inherit" }}
-      color={{ base: "black", lg: "white" }}
+      bg={{ base: "white", md: "inherit" }}
+      color={{ base: "black", md: "white" }}
     >
       <Text
         className="space"
         fontSize={"28px"}
         fontWeight={"semibold"}
-        textDecor={{ base: "underline", lg: "none" }}
+        textDecor={{ base: "underline", md: "none" }}
       >
         {title}
       </Text>
@@ -65,11 +65,11 @@ function SkillSet({ skills, title }) {
           <VStack
             key={index}
             rounded={"md"}
-            w={{ base: "auto", lg: "100px" }}
-            h={{ base: "auto", lg: "100px" }}
-            bg={{ base: "inherit", lg: "white" }}
-            color={{ base: "inherit", lg: "black" }}
-            padding={{ lg: "8px" }}
+            w={{ base: "auto", md: "100px" }}
+            h={{ base: "auto", md: "100px" }}
+            bg={{ base: "inherit", md: "white" }}
+            color={{ base: "inherit", md: "black" }}
+            padding={{ md: "8px" }}
           >
             <Image alt={skill.name} src={skill.url} w={"50px"} />
             <Text fontSize={"16px"} fontWeight={"semibold"}>
