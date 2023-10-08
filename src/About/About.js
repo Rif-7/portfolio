@@ -1,4 +1,5 @@
 import { Flex, Text } from "@chakra-ui/react";
+import Skills from "./Skills";
 
 export default function About() {
   return (
@@ -25,7 +26,7 @@ export default function About() {
         Hi, I&apos;m Rifan. Nice to meet you.
       </Text>
 
-      <Text color={"white"} maxW={"800px"} fontSize={"22px"}>
+      <Text color={"white"} maxW={"800px"} w={"100%"} fontSize={"22px"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet
         massa ultricies, porttitor metus ut, gravida risus. Suspendisse eu
         fermentum ligula. Quisque sollicitudin mi at blandit dapibus. Cras
@@ -36,6 +37,8 @@ export default function About() {
         leo, a lacinia nulla. Fusce lacinia blandit nulla, ut blandit sapien
         fringilla et. Praesent ut aliquam enim.
       </Text>
+
+      <Skills />
     </Flex>
   );
 }
