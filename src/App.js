@@ -1,9 +1,9 @@
 import { ChakraProvider } from "@chakra-ui/react";
-import Head from "./Head/Head";
+import Head from "./components/Head/Head";
 import "./app.css";
-import Navbar from "./Navbar/Navbar";
-import About from "./About/About";
-import Projects from "./Projects/Projects";
+import Navbar from "./components/Navbar/Navbar";
+import About from "./components/About/About";
+import Projects from "./components/Projects/Projects";
 
 function App() {
   return (
