@@ -1,25 +1,5 @@
 import { Flex, Image, Text, VStack } from "@chakra-ui/react";
-
-const languages = [
-  { name: "Python", url: "skills/python.png" },
-  { name: "JavaScript", url: "skills/js.png" },
-  { name: "SQL", url: "skills/sql.png" },
-  { name: "HTML", url: "skills/html.png" },
-  { name: "CSS", url: "skills/css.png" },
-];
-
-const otherSkills = [
-  { name: "React JS", url: "skills/react.png" },
-  { name: "Express JS", url: "skills/express.png" },
-  { name: "Node JS", url: "skills/nodejs.png" },
-  { name: "Redux", url: "skills/redux.png" },
-  { name: "Mongo DB", url: "skills/mongodb.png" },
-  { name: "Chakra UI", url: "skills/chakraui.png" },
-  { name: "Git", url: "skills/git.png" },
-  { name: "Firebase", url: "skills/firebase.png" },
-  { name: "Webpack", url: "skills/webpack.png" },
-  { name: "MySQL", url: "skills/mysql.png" },
-];
+import { languages, otherSkills } from "./skillData";
 
 export default function Skills() {
   return (
@@ -48,13 +28,17 @@ export default function Skills() {
 function SkillSet({ skills, title }) {
   return (
     <VStack rounded={"md"} color={"white"} align={"center"} justify={"center"}>
-      <Text className="space" fontSize={"28px"} fontWeight={"semibold"}>
+      <Text
+        className="space"
+        fontSize={{ base: "24px", md: "28px" }}
+        fontWeight={"semibold"}
+      >
         {title}
       </Text>
       <Flex
         wrap={"wrap"}
         gap={{ base: "10px", md: "18px" }}
-        padding={"18px"}
+        padding={{ base: "0px", md: "18px" }}
         justify={"center"}
         align={"center"}
       >

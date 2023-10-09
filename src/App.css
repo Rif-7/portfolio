@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway&family=Space+Grotesk&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway&family=Space+Grotesk&family=Merriweather&display=swap');
 
 .raleway {
     font-family: "Raleway", sans-serif;
@@ -10,4 +10,8 @@
 
 .space {
     font-family: "Space Grotesk", sans-serif;
+}
+
+.merriweather { 
+    font-family: "Merriweather", serif;
 }

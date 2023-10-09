@@ -3,6 +3,7 @@ import Head from "./Head/Head";
 import "./app.css";
 import Navbar from "./Navbar/Navbar";
 import About from "./About/About";
+import Projects from "./Projects/Projects";
 
 function App() {
   return (
@@ -10,6 +11,7 @@ function App() {
       <Navbar />
       <Head />
       <About />
+      <Projects />
     </ChakraProvider>
   );
 }

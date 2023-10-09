@@ -13,6 +13,8 @@ export default function About() {
       paddingX={"30px"}
       gap={"20px"}
       color={"white"}
+      borderBottom={"75px solid #0075F2"}
+      clipPath={"polygon(0 0,100% 0, 100% calc(100% - 90px),0 100%)"}
     >
       <Text
         className="space"
