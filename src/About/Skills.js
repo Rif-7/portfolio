@@ -4,7 +4,7 @@ const languages = [
   { name: "Python", url: "skills/python.png" },
   { name: "JavaScript", url: "skills/js.png" },
   { name: "SQL", url: "skills/sql.png" },
-  { name: "HTML", url: "skills/HTML.png" },
+  { name: "HTML", url: "skills/html.png" },
   { name: "CSS", url: "skills/css.png" },
 ];
 
@@ -23,7 +23,13 @@ const otherSkills = [
 
 export default function Skills() {
   return (
-    <VStack maxW={"800px"} w={"100%"} mt={"25px"}>
+    <VStack
+      maxW={"800px"}
+      w={"100%"}
+      mt={"25px"}
+      align={"center"}
+      justify={"center"}
+    >
       <Text
         className="space"
         fontSize={{ base: "18px", md: "22px" }}
@@ -41,22 +47,13 @@ export default function Skills() {
 
 function SkillSet({ skills, title }) {
   return (
-    <VStack
-      rounded={"md"}
-      bg={{ base: "white", md: "inherit" }}
-      color={{ base: "black", md: "white" }}
-    >
-      <Text
-        className="space"
-        fontSize={"28px"}
-        fontWeight={"semibold"}
-        textDecor={{ base: "underline", md: "none" }}
-      >
+    <VStack rounded={"md"} color={"white"} align={"center"} justify={"center"}>
+      <Text className="space" fontSize={"28px"} fontWeight={"semibold"}>
         {title}
       </Text>
       <Flex
         wrap={"wrap"}
-        gap={"18px"}
+        gap={{ base: "10px", md: "18px" }}
         padding={"18px"}
         justify={"center"}
         align={"center"}
@@ -65,14 +62,23 @@ function SkillSet({ skills, title }) {
           <VStack
             key={index}
             rounded={"md"}
-            w={{ base: "auto", md: "100px" }}
-            h={{ base: "auto", md: "100px" }}
-            bg={{ base: "inherit", md: "white" }}
-            color={{ base: "inherit", md: "black" }}
-            padding={{ md: "8px" }}
+            w={{ base: "80px", md: "100px" }}
+            h={{ base: "80px", md: "100px" }}
+            bg={"white"}
+            color={"black"}
+            align={"center"}
+            justify={"center"}
+            padding={{ base: "4px", md: "8px" }}
           >
-            <Image alt={skill.name} src={skill.url} w={"50px"} />
-            <Text fontSize={"16px"} fontWeight={"semibold"}>
+            <Image
+              alt={skill.name}
+              src={skill.url}
+              w={{ base: "40px", md: "50px" }}
+            />
+            <Text
+              fontSize={{ base: "14px", md: "16px" }}
+              fontWeight={"semibold"}
+            >
               {skill.name}
             </Text>
           </VStack>
