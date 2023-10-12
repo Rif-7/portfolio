@@ -4,7 +4,7 @@ import ProjectCard from "./ProjectCard";
 
 export default function Projects() {
   return (
-    <VStack height={"1200px"}>
+    <VStack>
       <Text
         className="space"
         fontSize={{ base: "18px", md: "22px" }}
@@ -12,7 +12,11 @@ export default function Projects() {
       >
         Projects
       </Text>
-      <VStack mt={"50px"} padding={{ base: "10px", md: "22px" }} gap={{base: "50px", lg: "100px"}}>
+      <VStack
+        mt={"50px"}
+        padding={{ base: "10px", md: "22px" }}
+        gap={{ base: "50px", lg: "100px" }}
+      >
         {projectsData.map((project, index) => (
           <ProjectCard project={project} key={index} index={index} />
         ))}

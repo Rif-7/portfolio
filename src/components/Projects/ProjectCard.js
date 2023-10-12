@@ -1,4 +1,5 @@
 import {
+  Badge,
   Box,
   Button,
   Flex,
@@ -21,10 +22,14 @@ export default function ProjectCard({ project, index }) {
       gap={"30px"}
     >
       <Image
+        borderStyle={"solid"}
+        borderWidth={"10px"}
+        borderColor={"blue.200"}
+        rounded={"md"}
         alt={title}
         src={links.image}
         w={"100%"}
-        maxW={"550px"}
+        maxW={"600px"}
         alignSelf={"flex-start"}
       />
 
@@ -65,14 +70,13 @@ export default function ProjectCard({ project, index }) {
             </Link>
           </HStack>
         </Box>
-        <Text
-          className="merriweather"
-          fontSize={"14px"}
-          fontStyle={"italic"}
-          color={"gray"}
-        >
-          {tags}
-        </Text>
+        <Flex wrap={"wrap"} gap={"4px"}>
+          {tags.map((tag, index) => (
+            <Badge key={index} variant={"solid"} colorScheme={"blue"}>
+              {tag}
+            </Badge>
+          ))}
+        </Flex>
       </VStack>
     </Flex>
   );
