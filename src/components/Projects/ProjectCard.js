@@ -22,15 +22,20 @@ export default function ProjectCard({ project, index }) {
       gap={"30px"}
     >
       <Image
+        boxShadow={"dark-lg"}
         borderStyle={"solid"}
-        borderWidth={"10px"}
+        borderWidth={"2px"}
         borderColor={"blue.200"}
-        rounded={"md"}
+        rounded={"sm"}
         alt={title}
         src={links.image}
         w={"100%"}
         maxW={"600px"}
         alignSelf={"flex-start"}
+        transitionDuration={"200ms"}
+        _hover={{
+          transform: "translate(0px, -5px)",
+        }}
       />
 
       <VStack alignItems={"flex-start"} maxW={"400px"}>
@@ -55,6 +60,7 @@ export default function ProjectCard({ project, index }) {
                 variant={"outline"}
                 colorScheme={"blue"}
                 color={"#0075F2"}
+                className="raleway"
               >
                 Code
               </Button>
@@ -64,6 +70,7 @@ export default function ProjectCard({ project, index }) {
                 variant={"outline"}
                 colorScheme={"blue"}
                 color={"#0075F2"}
+                className="raleway"
               >
                 Preview
               </Button>
