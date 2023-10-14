@@ -45,9 +45,9 @@ export default function Contact() {
         borderBottom={"2px solid white"}
         padding={"2px"}
         className="raleway"
-        fontSize={{ base: "12px", lg: "14px" }}
+        fontSize={{ base: "12px", lg: "16px" }}
       >
-        Images taken from{" "}
+        Images taken from&nbsp;
         <Link isExternal href="https://icons8.com/">
           Icons8
         </Link>
