@@ -42,8 +42,25 @@ export default function Contact() {
       </Link>
 
       <Text
+        borderBottom={"2px solid white"}
+        padding={"2px"}
+        className="raleway"
+        fontSize={{ base: "12px", lg: "14px" }}
+      >
+        Images taken from{" "}
+        <Link isExternal href="https://icons8.com/">
+          Icons8
+        </Link>
+        &nbsp;and&nbsp;
+        <Link isExternal href="https://flaticon.com">
+          Flaticon
+        </Link>
+      </Text>
+
+      <Text
         className="raleway"
         fontSize={{ base: "12px", md: "16px", lg: "18px" }}
+        fontWeight={"semibold"}
       >
         Copyright © 2023 Created by Muhammad Rifan N. A
       </Text>
