@@ -23,16 +23,16 @@ export default function Projects() {
         ))}
       </VStack>
       <Text
-        fontSize={{ base: "17px", md: "22px" }}
+        fontSize={{ base: "16px", md: "22px" }}
         className="raleway"
-        mt={"15px"}
+        mt={"30px"}
         fontWeight={"semibold"}
       >
         Visit my&nbsp;
         <Link isExternal href="https://github.com/Rif-7">
           <Button
             variant={"link"}
-            fontSize={{ base: "17px", md: "22px" }}
+            fontSize={{ base: "16px", md: "22px" }}
             rightIcon={<ExternalLinkIcon />}
           >
             github

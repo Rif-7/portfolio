@@ -22,7 +22,7 @@ export default function ProjectCard({ project, index }) {
       gap={"30px"}
     >
       <Image
-        boxShadow={"dark-lg"}
+        boxShadow={"lg"}
         borderStyle={"solid"}
         borderWidth={"2px"}
         borderColor={"blue.200"}
