@@ -29,7 +29,7 @@ function App() {
 
   return (
     <ChakraProvider>
-      <Box ref={container}>
+      <Box ref={container} scrollBehavior={"smooth"}>
         <Navbar />
         <Head />
         <About />

@@ -15,8 +15,9 @@ export default function Projects() {
             trigger: image,
             start: "top 80%",
             end: "center center",
-            scrub: true,
+            toggleActions: "play none none reverse",
           },
+          ease: "power3",
           duration: 1,
           x: () => (i % 2 === 0 ? "-100%" : "100%"),
           opacity: 0,
@@ -27,12 +28,13 @@ export default function Projects() {
         gsap.from(project, {
           scrollTrigger: {
             trigger: project,
-            start: "top 90%",
+            start: "top 80%",
             end: "center center",
-            scrub: true,
+            toggleActions: "play none none reverse",
           },
+          delay: 0.3,
           opacity: 0,
-          duration: 2,
+          duration: 1,
         });
       });
     }, container);
