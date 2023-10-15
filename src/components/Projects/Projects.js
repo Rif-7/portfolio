@@ -18,7 +18,7 @@ export default function Projects() {
             scrub: true,
           },
           duration: 1,
-          x: () => (i % 2 === 0 ? "-50px" : "50px"),
+          x: () => (i % 2 === 0 ? "-100px" : "100px"),
           opacity: 0,
         });
       });

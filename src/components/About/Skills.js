@@ -16,7 +16,6 @@ export default function Skills() {
           start: "top 90%",
         },
         duration: 0.6,
-        y: "100%",
         opacity: 0,
         stagger: 0.2,
       });
