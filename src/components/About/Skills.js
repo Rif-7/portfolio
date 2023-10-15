@@ -1,10 +1,29 @@
 import { Text, VStack } from "@chakra-ui/react";
 import { languages, otherSkills } from "./skillData";
-import { useRef } from "react";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
+import { useLayoutEffect, useRef } from "react";
 import SkillSet from "./SkillSet";
 
 export default function Skills() {
   const container = useRef();
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.registerPlugin(ScrollTrigger);
+      gsap.from(".skill-box", {
+        scrollTrigger: {
+          trigger: ".skill-box",
+          start: "top 80%",
+        },
+        duration: 1,
+        y: "100%",
+        opacity: 0,
+        stagger: 0.2,
+      });
+    }, container);
+
+    return () => ctx.revert();
+  }, []);
 
   return (
     <VStack

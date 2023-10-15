@@ -16,9 +16,11 @@ export default function SkillSet({ skills, title }) {
         padding={{ base: "0px", md: "18px" }}
         justify={"center"}
         align={"center"}
+        overflow={"hidden"}
       >
         {skills.map((skill, index) => (
           <VStack
+            className="skill-box"
             key={index}
             rounded={"md"}
             w={{ base: "80px", md: "100px" }}
