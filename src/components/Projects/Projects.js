@@ -18,7 +18,7 @@ export default function Projects() {
             scrub: true,
           },
           duration: 1,
-          x: () => (i % 2 === 0 ? "-100px" : "100px"),
+          x: () => (i % 2 === 0 ? "-100%" : "100%"),
           opacity: 0,
         });
       });
@@ -41,7 +41,7 @@ export default function Projects() {
   }, []);
 
   return (
-    <VStack py={"30px"} ref={container}>
+    <VStack py={"30px"} ref={container} className="project-section">
       <Text
         className="space"
         fontSize={{ base: "18px", md: "22px" }}

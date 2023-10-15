@@ -23,6 +23,7 @@ export default function Navbar() {
       <Spacer />
       <Menu>
         <MenuButton
+          className="menu-icon"
           as={IconButton}
           aria-label="Options"
           icon={<GiHamburgerMenu />}
