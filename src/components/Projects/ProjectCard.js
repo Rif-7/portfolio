@@ -20,8 +20,10 @@ export default function ProjectCard({ project, index }) {
         lg: index % 2 === 0 ? "row" : "row-reverse",
       }}
       gap={"30px"}
+      overflow={"hidden"}
     >
       <Image
+        className="project-image"
         boxShadow={"lg"}
         borderStyle={"solid"}
         borderWidth={"2px"}
@@ -32,13 +34,9 @@ export default function ProjectCard({ project, index }) {
         w={"100%"}
         maxW={"600px"}
         alignSelf={"flex-start"}
-        transitionDuration={"200ms"}
-        _hover={{
-          transform: "translate(0px, -5px)",
-        }}
       />
 
-      <VStack alignItems={"flex-start"} maxW={"400px"}>
+      <VStack alignItems={"flex-start"} maxW={"400px"} className="project-info">
         <Text
           className="raleway"
           fontSize={"22px"}

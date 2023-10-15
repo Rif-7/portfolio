@@ -13,9 +13,9 @@ export default function Skills() {
       gsap.from(".skill-box", {
         scrollTrigger: {
           trigger: ".skill-box",
-          start: "top 80%",
+          start: "top 90%",
         },
-        duration: 1,
+        duration: 0.6,
         y: "100%",
         opacity: 0,
         stagger: 0.2,

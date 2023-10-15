@@ -2,10 +2,46 @@ import { Button, Link, Text, VStack } from "@chakra-ui/react";
 import { projectsData } from "./projectData";
 import ProjectCard from "./ProjectCard";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
 
 export default function Projects() {
+  const container = useRef(null);
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      gsap.utils.toArray(".project-image").forEach((image, i) => {
+        gsap.from(image, {
+          scrollTrigger: {
+            trigger: image,
+            start: "top 80%",
+            end: "center center",
+            scrub: true,
+          },
+          duration: 1,
+          x: () => (i % 2 === 0 ? "-50px" : "50px"),
+          opacity: 0,
+        });
+      });
+
+      gsap.utils.toArray(".project-info").forEach((project, i) => {
+        gsap.from(project, {
+          scrollTrigger: {
+            trigger: project,
+            start: "top 90%",
+            end: "center center",
+            scrub: true,
+          },
+          opacity: 0,
+          duration: 2,
+        });
+      });
+    }, container);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <VStack py={"30px"}>
+    <VStack py={"30px"} ref={container}>
       <Text
         className="space"
         fontSize={{ base: "18px", md: "22px" }}
