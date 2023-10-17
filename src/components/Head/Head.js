@@ -9,14 +9,12 @@ export default function Head() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       gsap.from(".header-logo", {
-        ease: "elastic",
         duration: 1.5,
         x: "-100%",
         delay: 0.5,
       });
 
       gsap.from(".social-icon", {
-        ease: "elastic",
         duration: 1.5,
         y: "100%",
         opacity: 0,

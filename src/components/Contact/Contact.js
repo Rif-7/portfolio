@@ -4,10 +4,63 @@ import { MdEmail } from "react-icons/md";
 import { FiGithub } from "react-icons/fi";
 import ContactIcon from "./ContactIcon";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
+import { useLayoutEffect, useRef } from "react";
+import gsap from "gsap";
 
 export default function Contact() {
+  const container = useRef(null);
+  useLayoutEffect(() => {
+    let ctx = gsap.context(() => {
+      const defaults = {
+        start: "top 80%",
+        delay: 0.5,
+        duration: 1,
+        opacity: 0,
+        toggleActions: "play none none reverse",
+      };
+
+      gsap.from(".email-contact", {
+        scrollTrigger: {
+          trigger: ".email-contact",
+          start: defaults.start,
+          toggleActions: defaults.toggleActions,
+        },
+        delay: defaults.delay,
+        duration: defaults.duration,
+        opacity: defaults.opacity,
+      });
+
+      gsap.from(".github-contact", {
+        scrollTrigger: {
+          trigger: ".github-contact",
+          start: defaults.start,
+          toggleActions: defaults.toggleActions,
+        },
+        delay: defaults.delay,
+        duration: defaults.duration,
+        x: "-70px",
+        opacity: defaults.opacity,
+      });
+
+      gsap.from(".linkedin-contact", {
+        scrollTrigger: {
+          trigger: ".linkedin-contact",
+          start: defaults.start,
+          toggleActions: defaults.toggleActions,
+        },
+        delay: defaults.delay,
+        duration: defaults.duration,
+        x: "70px",
+        opacity: defaults.opacity,
+      });
+    }, container);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
     <VStack
+      ref={container}
       bg={"#0075F2"}
       borderTop={"75px solid #0075F2"}
       clipPath={"polygon(0 0,100% 90px, 100% 100%,0 100%)"}
@@ -24,9 +77,9 @@ export default function Contact() {
       </Text>
 
       <HStack gap={{ base: "0px", md: "8px" }}>
-        <ContactIcon icon={FiGithub} />
-        <ContactIcon icon={MdEmail} />
-        <ContactIcon icon={FaLinkedinIn} />
+        <ContactIcon class_="github-contact" icon={FiGithub} />
+        <ContactIcon class_="email-contact" icon={MdEmail} />
+        <ContactIcon class_="linkedin-contact" icon={FaLinkedinIn} />
       </HStack>
 
       <Link>

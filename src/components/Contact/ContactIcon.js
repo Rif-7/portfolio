@@ -1,8 +1,9 @@
 import { Center, Icon } from "@chakra-ui/react";
 
-export default function ContactIcon({ icon }) {
+export default function ContactIcon({ icon, class_ }) {
   return (
     <Center
+      className={class_}
       border={"5px solid white"}
       padding={"8px"}
       rounded={"full"}

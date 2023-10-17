@@ -13,7 +13,7 @@ export default function Projects() {
         gsap.from(image, {
           scrollTrigger: {
             trigger: image,
-            start: "top 80%",
+            start: "top 70%",
             end: "center center",
             toggleActions: "play none none reverse",
           },
@@ -28,11 +28,11 @@ export default function Projects() {
         gsap.from(project, {
           scrollTrigger: {
             trigger: project,
-            start: "top 80%",
+            start: "top 70%",
             end: "center center",
             toggleActions: "play none none reverse",
           },
-          delay: 0.3,
+          delay: 0.2,
           opacity: 0,
           duration: 1,
         });
