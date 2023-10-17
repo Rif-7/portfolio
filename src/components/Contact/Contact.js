@@ -12,8 +12,8 @@ export default function Contact() {
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
       const defaults = {
-        start: "top 80%",
-        delay: 0.5,
+        start: "top 90%",
+        delay: 0.3,
         duration: 1,
         opacity: 0,
         toggleActions: "play none none reverse",
@@ -37,8 +37,8 @@ export default function Contact() {
           toggleActions: defaults.toggleActions,
         },
         delay: defaults.delay,
-        duration: defaults.duration,
         x: "-70px",
+        duration: defaults.duration,
         opacity: defaults.opacity,
       });
 

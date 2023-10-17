@@ -28,7 +28,9 @@ export default function Projects() {
         gsap.from(project, {
           scrollTrigger: {
             trigger: project,
-            start: "top 70%",
+            start: () => {
+              return window.innerWidth >= 992 ? "top 70%" : "top 85%";
+            },
             end: "center center",
             toggleActions: "play none none reverse",
           },

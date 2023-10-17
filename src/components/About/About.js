@@ -6,6 +6,7 @@ export default function About() {
     <Flex
       w={"100%"}
       bg={"#0075F2"}
+      // backgroundImage={"loadbg.jpg"}
       direction={"column"}
       align={"center"}
       className="raleway"
