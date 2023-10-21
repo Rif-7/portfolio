@@ -2,9 +2,9 @@ import { Flex, Image, Text, VStack } from "@chakra-ui/react";
 
 export default function SkillSet({ skills, title }) {
   return (
-    <VStack rounded={"md"} color={"white"} align={"center"} justify={"center"}>
+    <VStack rounded={"md"} align={"center"} justify={"center"}>
       <Text
-        className="space"
+        className="raleway"
         fontSize={{ base: "24px", md: "28px" }}
         fontWeight={"semibold"}
       >

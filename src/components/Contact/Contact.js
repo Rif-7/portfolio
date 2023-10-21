@@ -16,7 +16,7 @@ export default function Contact() {
         delay: 0.3,
         duration: 1,
         opacity: 0,
-        toggleActions: "play none none reverse",
+        toggleActions: "play none none none",
       };
 
       gsap.from(".email-contact", {
@@ -104,9 +104,13 @@ export default function Contact() {
         <Link isExternal href="https://icons8.com/">
           Icons8
         </Link>
-        &nbsp;and&nbsp;
+        ,&nbsp;
         <Link isExternal href="https://flaticon.com">
           Flaticon
+        </Link>
+        &nbsp;and&nbsp;
+        <Link isExternal href="https://pexels.com">
+          Pexels
         </Link>
       </Text>
 

@@ -15,7 +15,7 @@ export default function Projects() {
             trigger: image,
             start: "top 70%",
             end: "center center",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
           ease: "power3",
           duration: 1,
@@ -32,7 +32,7 @@ export default function Projects() {
               return window.innerWidth >= 992 ? "top 70%" : "top 85%";
             },
             end: "center center",
-            toggleActions: "play none none reverse",
+            toggleActions: "play none none none",
           },
           delay: 0.2,
           opacity: 0,

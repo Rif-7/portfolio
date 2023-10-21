@@ -15,7 +15,7 @@ export default function Skills() {
           trigger: ".skill-box",
           start: "top 90%",
         },
-        duration: 0.6,
+        duration: 0.5,
         opacity: 0,
         stagger: 0.2,
       });

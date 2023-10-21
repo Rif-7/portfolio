@@ -5,17 +5,16 @@ export default function About() {
   return (
     <Flex
       w={"100%"}
-      bg={"#0075F2"}
-      // backgroundImage={"loadbg.jpg"}
+      backgroundImage={"about-bg.jpg"}
+      backgroundSize={"cover"}
+      backgroundPosition={"center"}
       direction={"column"}
       align={"center"}
       className="raleway"
       paddingY={"50px"}
       paddingX={"30px"}
       gap={"20px"}
-      color={"white"}
-      borderBottom={"75px solid #0075F2"}
-      clipPath={"polygon(0 0,100% 0, 100% calc(100% - 90px),0 100%)"}
+      color={"black"}
     >
       <Text
         className="space"
@@ -25,11 +24,11 @@ export default function About() {
         About
       </Text>
 
-      <Text color={"white"} fontSize={"32px"} fontWeight={"semibold"}>
+      <Text fontSize={"32px"} fontWeight={"semibold"}>
         Hi, I&apos;m Rifan. Nice to meet you.
       </Text>
 
-      <Text color={"white"} maxW={"800px"} w={"100%"} fontSize={"22px"}>
+      <Text maxW={"800px"} w={"100%"} fontSize={"22px"} padding={"5px"}>
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet
         massa ultricies, porttitor metus ut, gravida risus. Suspendisse eu
         fermentum ligula. Quisque sollicitudin mi at blandit dapibus. Cras
