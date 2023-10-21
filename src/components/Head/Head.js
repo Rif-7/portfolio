@@ -67,7 +67,7 @@ export default function Head() {
         style={{
           height: "100vh",
         }}
-        scene="https://prod.spline.design/v1LEqu6LD8QZYtc2/scene.splinecode"
+        scene="https://prod.spline.design/RPuboyVjtnoKG6ah/scene.splinecode"
       />
     </Box>
   );

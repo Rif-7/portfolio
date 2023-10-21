@@ -6,6 +6,8 @@ export default function Loading() {
       className="space"
       bg={"blue.200"}
       backgroundImage={"loadbg.jpg"}
+      position={"absolute"}
+      zIndex={20}
       height={"100vh"}
       w={"100%"}
       justify={"center"}
