@@ -64,6 +64,7 @@ export default function Contact() {
 
   return (
     <VStack
+      id="contact"
       ref={container}
       bg={"#0075F2"}
       borderTop={"75px solid #0075F2"}

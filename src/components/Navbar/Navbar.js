@@ -1,6 +1,8 @@
 import {
   HStack,
+  Icon,
   IconButton,
+  Link,
   Menu,
   MenuButton,
   MenuItem,
@@ -8,6 +10,12 @@ import {
   Spacer,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
+import {
+  AiOutlineHome,
+  AiOutlineUser,
+  AiOutlineTool,
+  AiOutlineContacts,
+} from "react-icons/ai";
 
 export default function Navbar() {
   return (
@@ -33,9 +41,26 @@ export default function Navbar() {
           transform={"scale(1.6)"}
         />
         <MenuList>
-          <MenuItem>About</MenuItem>
-          <MenuItem>Projects</MenuItem>
-          <MenuItem>Contact</MenuItem>
+          <MenuItem>
+            <Link w={"100%"} href="#head">
+              <Icon as={AiOutlineHome} /> Welcome
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link w={"100%"} href="#about">
+              <Icon as={AiOutlineUser} /> About
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link w={"100%"} href="#projects">
+              <Icon as={AiOutlineTool} /> Projects
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link w={"100%"} href="#contact">
+              <Icon as={AiOutlineContacts} /> Contact
+            </Link>
+          </MenuItem>
         </MenuList>
       </Menu>
     </HStack>

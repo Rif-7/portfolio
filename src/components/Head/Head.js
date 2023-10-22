@@ -1,5 +1,5 @@
 import { useLayoutEffect, useRef, useState } from "react";
-import { Box, HStack, Image, Text, VStack } from "@chakra-ui/react";
+import { Box, HStack, Image, VStack } from "@chakra-ui/react";
 import Spline from "@splinetool/react-spline";
 import SocialLinks from "./SocialLinks";
 import gsap from "gsap";
@@ -33,7 +33,7 @@ export default function Head() {
   }, [isLoading]);
 
   return (
-    <Box position={"relative"} ref={container}>
+    <Box id="head" position={"relative"} ref={container}>
       {!isLoading && (
         <>
           <HStack

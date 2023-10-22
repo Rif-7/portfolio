@@ -4,6 +4,7 @@ import Skills from "./Skills";
 export default function About() {
   return (
     <Flex
+      id="about"
       w={"100%"}
       backgroundImage={"about-bg.jpg"}
       backgroundSize={"cover"}

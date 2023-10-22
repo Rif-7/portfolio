@@ -44,7 +44,12 @@ export default function Projects() {
   }, []);
 
   return (
-    <VStack py={"30px"} ref={container} className="project-section">
+    <VStack
+      id="projects"
+      py={"30px"}
+      ref={container}
+      className="project-section"
+    >
       <Text
         className="space"
         fontSize={{ base: "18px", md: "22px" }}
