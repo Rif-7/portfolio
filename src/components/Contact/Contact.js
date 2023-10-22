@@ -6,6 +6,7 @@ import ContactIcon from "./ContactIcon";
 import { ExternalLinkIcon } from "@chakra-ui/icons";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import socials from "../../links";
 
 export default function Contact() {
   const container = useRef(null);
@@ -80,12 +81,24 @@ export default function Contact() {
       </Text>
 
       <HStack gap={{ base: "0px", md: "8px" }}>
-        <ContactIcon class_="github-contact" icon={FiGithub} />
-        <ContactIcon class_="email-contact" icon={MdEmail} />
-        <ContactIcon class_="linkedin-contact" icon={FaLinkedinIn} />
+        <ContactIcon
+          class_="github-contact"
+          icon={FiGithub}
+          link={socials.github}
+        />
+        <ContactIcon
+          class_="email-contact"
+          icon={MdEmail}
+          link={socials.email}
+        />
+        <ContactIcon
+          class_="linkedin-contact"
+          icon={FaLinkedinIn}
+          link={socials.linkedin}
+        />
       </HStack>
 
-      <Link>
+      <Link href={socials.resume}>
         <Button
           variant={"outline"}
           color={"white"}

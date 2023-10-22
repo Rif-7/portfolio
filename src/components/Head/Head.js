@@ -53,10 +53,7 @@ export default function Head() {
               fontSize={"18px"}
               color={"white"}
               fontWeight={"semibold"}
-            >
-              <Text>Muhammad</Text>
-              <Text>Rifan N. A</Text>
-            </VStack>
+            ></VStack>
           </HStack>
           <SocialLinks />
         </>
@@ -67,7 +64,7 @@ export default function Head() {
         style={{
           height: "100vh",
         }}
-        scene="https://prod.spline.design/RPuboyVjtnoKG6ah/scene.splinecode"
+        scene={"splinefile.spline"}
       />
     </Box>
   );

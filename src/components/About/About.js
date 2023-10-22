@@ -29,14 +29,14 @@ export default function About() {
       </Text>
 
       <Text maxW={"800px"} w={"100%"} fontSize={"22px"} padding={"5px"}>
-        I'm a 20-year-old computer science student from Kerala, India. I've been
-        coding since I was 17 with a strong focus in fullstack web development.
-        I'm all about crafting clean, user-friendly websites to solve real-world
-        problems. Along the way, I've explored serveral other fields such as
-        cybersecurity, penetration testing and machine learning. I spent most of
-        my time working on personal projects with a lineup of interesting
-        applications I want to create. In my free time I like catch up to my
-        favourite football clubs, listen to music and read.
+        I'm a twenty-year-old computer science undergraduate from Kerala, India.
+        I've been coding since I was 17 with a strong focus in web development.
+        I'm all about crafting clean, user-friendly frontends and architecting
+        robust, efficient backends. Along the way, I've explored serveral other
+        fields such as cybersecurity, penetration testing and machine learning.
+        I spent most of my time working on personal projects with a lineup of
+        interesting applications I want to create. In my free time I like catch
+        up to my favourite football clubs, listen to music and read.
       </Text>
 
       <Skills />

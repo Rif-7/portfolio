@@ -39,8 +39,7 @@ const projectsData = [
     but only logged-in users with activated memberships can write new messages. To access messages' 
     authors and creation timestamps, users must obtain membership by entering a SECRET code. 
     Users can check their membership status in the navigation bar. Additionally, an admin has the privilege to view all messages, 
-    including the author, date, and time, and can delete messages. This project is implemented using Node.js, Express.js, MongoDB, Pug, 
-    and Passport JS.`,
+    including the author, date, and time, and can delete messages.`,
     tags: ["Node JS", "Express JS", "Mongo DB", "Pug", "Passport JS"],
     links: {
       image: "projects/membersonly0.jpg",
