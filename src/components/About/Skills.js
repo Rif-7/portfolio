@@ -14,7 +14,9 @@ export default function Skills() {
         scrollTrigger: {
           trigger: ".skill-box",
           start: "top 90%",
+          end: "bottom top",
           once: true,
+          toggleActions: "play complete none none",
         },
         duration: 0.5,
         opacity: 0,

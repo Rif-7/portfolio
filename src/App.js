@@ -20,7 +20,6 @@ function App() {
           end: "bottom, top",
           toggleActions: "play none none reverse",
         },
-        rotate: "50",
         color: "black",
       });
     }, container);
