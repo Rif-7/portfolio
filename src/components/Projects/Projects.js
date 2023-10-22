@@ -16,10 +16,10 @@ export default function Projects() {
             start: "top 70%",
             end: "center center",
             toggleActions: "play none none none",
+            once: true,
           },
-          ease: "power3",
           duration: 1,
-          x: () => (i % 2 === 0 ? "-100%" : "100%"),
+          x: () => (i % 2 === 0 ? "-50%" : "50%"),
           opacity: 0,
         });
       });
@@ -28,11 +28,10 @@ export default function Projects() {
         gsap.from(project, {
           scrollTrigger: {
             trigger: project,
-            start: () => {
-              return window.innerWidth >= 992 ? "top 70%" : "top 85%";
-            },
+            start: () => (window.innerWidth >= 992 ? "top 70%" : "top 85%"),
             end: "center center",
             toggleActions: "play none none none",
+            once: true,
           },
           delay: 0.2,
           opacity: 0,

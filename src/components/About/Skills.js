@@ -14,6 +14,7 @@ export default function Skills() {
         scrollTrigger: {
           trigger: ".skill-box",
           start: "top 90%",
+          once: true,
         },
         duration: 0.5,
         opacity: 0,
@@ -42,7 +43,7 @@ export default function Skills() {
       </Text>
       <VStack gap={"12px"} align={"stretch"}>
         <SkillSet skills={languages} title={"Languages"} />
-        <SkillSet skills={otherSkills} title={"Frameworks & Tools"} />
+        <SkillSet skills={otherSkills} title={"Frameworks & Technologies"} />
       </VStack>
     </VStack>
   );

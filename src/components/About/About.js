@@ -29,15 +29,14 @@ export default function About() {
       </Text>
 
       <Text maxW={"800px"} w={"100%"} fontSize={"22px"} padding={"5px"}>
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam laoreet
-        massa ultricies, porttitor metus ut, gravida risus. Suspendisse eu
-        fermentum ligula. Quisque sollicitudin mi at blandit dapibus. Cras
-        lobortis non arcu eu sodales. Nam aliquam urna id magna congue, in
-        tincidunt erat malesuada. Nulla porttitor metus nunc, eget eleifend
-        turpis ornare vitae. Integer at ornare nibh. Pellentesque consectetur
-        ipsum id justo porttitor, ut bibendum quam hendrerit. Quisque a lacinia
-        leo, a lacinia nulla. Fusce lacinia blandit nulla, ut blandit sapien
-        fringilla et. Praesent ut aliquam enim.
+        I'm a 20-year-old computer science student from Kerala, India. I've been
+        coding since I was 17 with a strong focus in fullstack web development.
+        I'm all about crafting clean, user-friendly websites to solve real-world
+        problems. Along the way, I've explored serveral other fields such as
+        cybersecurity, penetration testing and machine learning. I spent most of
+        my time working on personal projects with a lineup of interesting
+        applications I want to create. In my free time I like catch up to my
+        favourite football clubs, listen to music and read.
       </Text>
 
       <Skills />

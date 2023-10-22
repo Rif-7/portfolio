@@ -5,8 +5,9 @@ export default function SkillSet({ skills, title }) {
     <VStack rounded={"md"} align={"center"} justify={"center"}>
       <Text
         className="raleway"
-        fontSize={{ base: "24px", md: "28px" }}
+        fontSize={{ base: "20px", md: "26px" }}
         fontWeight={"semibold"}
+        textAlign={"center"}
       >
         {title}
       </Text>
