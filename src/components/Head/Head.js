@@ -43,7 +43,7 @@ export default function Head() {
             className="header-logo"
           >
             <Image
-              src="navlogo.png"
+              src="header-logo.png"
               qalt="logo"
               w={{ base: "60px", md: "70px" }}
             />
