@@ -1,11 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Raleway&family=Space+Grotesk&family=Merriweather:wght@300;400&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Chivo+Mono&family=Raleway&family=Space+Grotesk&family=Merriweather:wght@300;400&display=swap');
 
 .raleway {
     font-family: "Raleway", sans-serif;
-}
-
-.baskerville {
-    font-family: "Libre Baskerville", monospace;
 }
 
 .space {
@@ -14,4 +10,8 @@
 
 .merriweather { 
     font-family: "Merriweather", serif;
+}
+
+.space-mono {
+ font-family: "Chivo Mono", monospace;
 }

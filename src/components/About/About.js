@@ -7,10 +7,11 @@ export default function About() {
 
   useEffect(() => {
     const interval = setInterval(() => {
-      getAge();
+      setMyAge(getAge);
     }, 3200);
 
     return () => clearInterval(interval);
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, []);
 
   const myDob = new Date(2003, 5, 3);
@@ -19,7 +20,7 @@ export default function About() {
     const curr = new Date();
     const ageInMs = curr - myDob;
     const age = ageInMs / MsPerYear;
-    setMyAge(age.toFixed(7));
+    return age.toFixed(7);
   };
 
   return (
@@ -50,15 +51,19 @@ export default function About() {
       </Text>
 
       <Text maxW={"800px"} w={"100%"} fontSize={"22px"} padding={"5px"}>
-        I'm a <b className="space">{myAge}</b>-year-old computer science
-        undergraduate from Kerala, India. I've been coding since I was 17, with
-        a strong focus in web development. I'm all about crafting clean,
-        user-friendly frontends and architecting robust, efficient backends.
-        Along the way, I've explored serveral other fields, such as
-        cybersecurity, penetration testing and machine learning. I spent most of
-        my time working on personal projects with a lineup of interesting
-        applications I want to create. In my free time, I enjoy catching up with
-        my favorite football clubs, listening to music, and reading
+        I'm a&nbsp;
+        <Text as={"b"} className="space-mono">
+          {myAge}
+        </Text>
+        -year-old computer science undergraduate from Kerala, India. I've been
+        coding since I was 17, with a strong focus in web development. I'm all
+        about crafting clean, user-friendly frontends and architecting robust,
+        efficient backends. Along the way, I've explored serveral other fields,
+        such as cybersecurity, penetration testing and machine learning. I spent
+        most of my time working on personal projects with a lineup of
+        interesting applications I want to create. In my free time, I enjoy
+        catching up with my favorite football clubs, listening to music, and
+        reading
       </Text>
 
       <Skills />
