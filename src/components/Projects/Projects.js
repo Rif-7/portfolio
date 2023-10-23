@@ -14,7 +14,7 @@ export default function Projects() {
           scrollTrigger: {
             trigger: image,
             start: "top 70%",
-            end: "center center",
+            end: "bottom top",
             toggleActions: "play continue none none",
             once: true,
           },
@@ -29,7 +29,7 @@ export default function Projects() {
           scrollTrigger: {
             trigger: project,
             start: () => (window.innerWidth >= 992 ? "top 70%" : "top 85%"),
-            end: "center center",
+            end: "bottom top",
             toggleActions: "play continue none none",
             once: true,
           },
