@@ -13,7 +13,7 @@ export default function Skills() {
       gsap.from(".skill-box", {
         scrollTrigger: {
           trigger: ".skill-box",
-          start: "top 90%",
+          start: "top 80%",
           end: "bottom top",
           once: true,
           toggleActions: "play complete none none",

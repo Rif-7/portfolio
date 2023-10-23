@@ -25,7 +25,7 @@ const projectsData = [
     description: `Where's Waldo is a frontend project inspired by the classic children's puzzle game. 
     Users are presented with an image and tasked with finding three characters. 
     Once they find all the characters, their scores are added to the leaderboard. 
-    The project uses ReactJS for the frontend and Firebase as the backend.`,
+    The project utilizes ReactJS for the frontend and Firebase as the backend.`,
     tags: ["React JS", "Firebase"],
     links: {
       image: "projects/whereswaldo1.jpg",

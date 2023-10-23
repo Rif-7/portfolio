@@ -1,7 +1,27 @@
 import { Flex, Text } from "@chakra-ui/react";
 import Skills from "./Skills";
+import { useEffect, useState } from "react";
 
 export default function About() {
+  const [myAge, setMyAge] = useState(20);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      getAge();
+    }, 3200);
+
+    return () => clearInterval(interval);
+  }, []);
+
+  const myDob = new Date(2003, 5, 3);
+  const MsPerYear = 1000 * 60 * 60 * 24 * 365.25;
+  const getAge = () => {
+    const curr = new Date();
+    const ageInMs = curr - myDob;
+    const age = ageInMs / MsPerYear;
+    setMyAge(age.toFixed(7));
+  };
+
   return (
     <Flex
       id="about"
@@ -30,14 +50,15 @@ export default function About() {
       </Text>
 
       <Text maxW={"800px"} w={"100%"} fontSize={"22px"} padding={"5px"}>
-        I'm a twenty-year-old computer science undergraduate from Kerala, India.
-        I've been coding since I was 17 with a strong focus in web development.
-        I'm all about crafting clean, user-friendly frontends and architecting
-        robust, efficient backends. Along the way, I've explored serveral other
-        fields such as cybersecurity, penetration testing and machine learning.
-        I spent most of my time working on personal projects with a lineup of
-        interesting applications I want to create. In my free time I like catch
-        up to my favourite football clubs, listen to music and read.
+        I'm a <b className="space">{myAge}</b>-year-old computer science
+        undergraduate from Kerala, India. I've been coding since I was 17, with
+        a strong focus in web development. I'm all about crafting clean,
+        user-friendly frontends and architecting robust, efficient backends.
+        Along the way, I've explored serveral other fields, such as
+        cybersecurity, penetration testing and machine learning. I spent most of
+        my time working on personal projects with a lineup of interesting
+        applications I want to create. In my free time, I enjoy catching up with
+        my favorite football clubs, listening to music, and reading
       </Text>
 
       <Skills />
