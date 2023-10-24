@@ -3,7 +3,7 @@ import gsap from "gsap";
 import { useLayoutEffect, useRef } from "react";
 import SocialLinks from "./SocialLinks";
 
-export default function Head2() {
+export default function Head() {
   const container = useRef(null);
   useLayoutEffect(() => {
     let ctx = gsap.context(() => {
@@ -21,8 +21,7 @@ export default function Head2() {
       });
       gsap.from(".left-name", {
         opacity: 0,
-        rotate: "-90",
-        y: "300px",
+        x: "300px",
         duration: 2,
         delay: 2,
       });
@@ -35,11 +34,11 @@ export default function Head2() {
       });
       gsap.from(".left-role", {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
       gsap.from(".right-role", {
         opacity: 0,
-        delay: 3,
+        delay: 4,
       });
     }, container);
 
