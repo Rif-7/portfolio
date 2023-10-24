@@ -46,6 +46,7 @@ export default function Head() {
   }, []);
   return (
     <HStack
+      id="head"
       bg={"gray.100"}
       ref={container}
       h="100vh"
