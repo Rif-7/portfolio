@@ -7,7 +7,6 @@ import {
   MenuButton,
   MenuItem,
   MenuList,
-  Spacer,
 } from "@chakra-ui/react";
 import { GiHamburgerMenu } from "react-icons/gi";
 import {
@@ -23,12 +22,10 @@ export default function Navbar() {
       paddingX={"30px"}
       paddingY={"15px"}
       position={"fixed"}
-      width={"100%"}
       zIndex={"20"}
       top={"0px"}
-      left={"0px"}
+      right={"0px"}
     >
-      <Spacer />
       <Menu>
         <MenuButton
           className="menu-icon"
@@ -37,7 +34,7 @@ export default function Navbar() {
           icon={<GiHamburgerMenu />}
           variant={"ghost"}
           colorScheme={"whiteAlpha"}
-          color={"white"}
+          color={"#2D3748"}
           transform={"scale(1.6)"}
         />
         <MenuList>

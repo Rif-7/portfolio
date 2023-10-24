@@ -1,5 +1,4 @@
 import { Box, ChakraProvider } from "@chakra-ui/react";
-import Head from "./components/Head/Head";
 import "./app.css";
 import Navbar from "./components/Navbar/Navbar";
 import About from "./components/About/About";
@@ -7,6 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
+import Head from "./components/Head/Head";
 
 function App() {
   const container = useRef(null);
@@ -20,7 +20,7 @@ function App() {
           end: "bottom, top",
           toggleActions: "play none none reverse",
         },
-        color: "black",
+        rotate: "40",
       });
     }, container);
     return () => ctx.revert();
