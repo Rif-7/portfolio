@@ -99,7 +99,7 @@ export default function Contact() {
         />
       </HStack>
 
-      <Link href={socials.resume}>
+      <Link href={socials.resume} isExternal>
         <Button
           variant={"outline"}
           color={"white"}
