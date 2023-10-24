@@ -9,8 +9,8 @@ export default function SocialLinks() {
   return (
     <HStack position={"absolute"} top={"30px"} left={"10px"} width={"100%"}>
       <Flex direction={"column"} gap={"10px"} padding={"5px"} rounded={"md"}>
-        <SocialIcon link={socials.linkedin} icn={TbBrandGithubFilled} />
-        <SocialIcon link={socials.github} icn={BiLogoLinkedin} />
+        <SocialIcon link={socials.github} icn={TbBrandGithubFilled} />
+        <SocialIcon link={socials.linkedin} icn={BiLogoLinkedin} />
         <SocialIcon link={socials.email} icn={MdEmail} />
         <SocialIcon link={socials.resume} icn={BiSolidUserDetail} />
       </Flex>

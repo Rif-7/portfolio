@@ -15,7 +15,7 @@ export default function Head2() {
       gsap.from(".social-icon", {
         duration: 1,
         opacity: 0,
-        delay: 1.5,
+        delay: 0.5,
         scale: 0,
         stagger: 0.2,
       });
@@ -24,16 +24,15 @@ export default function Head2() {
         rotate: "-90",
         y: "300px",
         duration: 2,
-        delay: 1.5,
+        delay: 2,
       });
       gsap.from(".right-name", {
         opacity: 0,
         rotate: "90",
         duration: 2,
         x: "300px",
-        delay: 1.5,
+        delay: 2,
       });
-
       gsap.from(".left-role", {
         opacity: 0,
         delay: 3,
