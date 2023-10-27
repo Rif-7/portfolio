@@ -6,7 +6,7 @@ import Projects from "./components/Projects/Projects";
 import Contact from "./components/Contact/Contact";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
-import Head from "./components/Head/Head";
+import Head3d from "./components/Head/Head3d";
 
 function App() {
   const container = useRef(null);
@@ -30,7 +30,7 @@ function App() {
     <ChakraProvider>
       <Box ref={container} scrollBehavior={"smooth"}>
         <Navbar />
-        <Head />
+        <Head3d />
         <About />
         <Projects />
         <Contact />
