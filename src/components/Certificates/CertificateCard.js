@@ -14,7 +14,7 @@ export default function CertificateCard({ title, description, link, year }) {
       <Image
         maxH={"345px"}
         borderStyle={"solid"}
-        borderWidth={"6px"}
+        borderWidth={"5px"}
         borderColor={"black"}
         data-type="Image"
         objectFit="cover"
