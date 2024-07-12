@@ -7,6 +7,7 @@ import Contact from "./components/Contact/Contact";
 import { useLayoutEffect, useRef } from "react";
 import gsap from "gsap";
 import Head from "./components/Head/Head";
+import Certificates from "./components/Certificates/Certificates";
 
 function App() {
   const container = useRef(null);
@@ -33,6 +34,7 @@ function App() {
         <Head />
         <About />
         <Projects />
+        <Certificates />
         <Contact />
       </Box>
     </ChakraProvider>

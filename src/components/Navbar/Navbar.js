@@ -16,6 +16,8 @@ import {
   AiOutlineContacts,
 } from "react-icons/ai";
 
+import { TbCertificate2 } from "react-icons/tb";
+
 export default function Navbar() {
   return (
     <HStack
@@ -51,6 +53,11 @@ export default function Navbar() {
           <MenuItem>
             <Link w={"100%"} href="#projects">
               <Icon as={AiOutlineTool} /> Projects
+            </Link>
+          </MenuItem>
+          <MenuItem>
+            <Link w={"100%"} href="#certificates">
+              <Icon as={TbCertificate2} /> Certificates
             </Link>
           </MenuItem>
           <MenuItem>
